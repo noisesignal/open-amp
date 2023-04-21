@@ -4,7 +4,7 @@
 set (CMAKE_SYSTEM_PROCESSOR "arm"            CACHE STRING "")
 set (MACHINE                "template"       CACHE STRING "")
 set (CROSS_PREFIX           "arm-none-eabi-" CACHE STRING "")
-set (CMAKE_C_FLAGS          "-mcpu=cortex-m4 -std=gnu11 -g3"     CACHE STRING "")
+set (CMAKE_C_FLAGS          "-mcpu=cortex-m4 -std=gnu11 -g3 -latomic"     CACHE STRING "")
 include (cross_generic_gcc)
 
 # vim: expandtab:ts=2:sw=2:smartindent
